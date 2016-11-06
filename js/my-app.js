@@ -11,7 +11,7 @@ var compiledTemplate = Template7.compile(template);
 // Defined as function "getrandom"
 function getrandom() {
   // Get JSON Data from UrbanDictionary API 
-  $$.getJSON('http://golf-entertainment.com/recent_subscribers.php?callback=?', function (data) {
+  $$.getJSON('http://golf-entertainment.com/recent_subscribers.php', function (data) {
 
     // Insert rendered template
     $$('#content-wrap').html(compiledTemplate(data))
